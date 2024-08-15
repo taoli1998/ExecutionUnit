@@ -1,0 +1,416 @@
+# 
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/LogicUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity LogicUnit
+# -- Compiling architecture logicBehaviour of LogicUnit
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/Adder.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Adder
+# -- Compiling architecture Ripple of Adder
+# -- Compiling architecture CarrySelect of Adder
+# -- Loading entity Adder
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/ArithUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package ATTRIBUTES
+# -- Loading package std_logic_misc
+# -- Compiling entity ArithUnit
+# -- Compiling architecture arithBehaviour of ArithUnit
+# -- Loading entity Adder
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/SLL64.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SLL64
+# -- Compiling architecture shiftLL of SLL64
+# ** Warning: ../SourceCode/SLL64.vhd(24): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SLL64.vhd(25): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SLL64.vhd(26): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SLL64.vhd(32): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SLL64.vhd(33): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SLL64.vhd(34): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SLL64.vhd(41): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# ** Warning: ../SourceCode/SLL64.vhd(42): (vcom-1514) Range choice direction (downto) does not determine aggregate index range direction (to).
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/SRL64.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SRL64
+# -- Compiling architecture shiftRL of SRL64
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/SRA64.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity SRA64
+# -- Compiling architecture shiftRA of SRA64
+# vcom -work work -2008 -explicit -stats=none ../SourceCode/ShiftUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity ShiftUnit
+# -- Compiling architecture barrelShifter of ShiftUnit
+# -- Loading package MATH_REAL
+# -- Loading entity SLL64
+# -- Loading entity SRL64
+# -- Loading entity SRA64
+# vcom -work work -2008 -explicit -stats=none ModelSim/ExecUnit.vho
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Compiling entity ExecUnit
+# -- Compiling architecture structure of ExecUnit
+# vcom -work work -2008 -explicit -stats=none TBExecUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity TBExecUnit
+# -- Compiling architecture behaveTB of TBExecUnit
+# vcom -work work -2008 -explicit -stats=none ConfigExecUnit.vhd
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# -- Loading package STANDARD
+# -- Compiling configuration FuncExecUnitSim
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading entity TBExecUnit
+# -- Loading architecture behaveTB of TBExecUnit
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Loading entity ExecUnit
+# -- Compiling configuration TimeExecUnitSim
+# -- Loading entity TBExecUnit
+# -- Loading architecture behaveTB of TBExecUnit
+# -- Loading entity ExecUnit
+# 
+# vsim -t 100ps -gui work.TimeExecUnitSim -sdftyp ../DUT=ModelSim/ExecUnit.sdo
+# vsim -t 100ps -gui work.TimeExecUnitSim -sdftyp "../DUT=ModelSim/ExecUnit.sdo" 
+# Start time: 11:42:11 on Dec 03,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.timeexecunitsim
+# SDF 2020.1 Compiler 2020.02 Feb 28 2020
+# 
+# Loading work.tbexecunit(behavetb)
+# Loading work.execunit(structure)
+# Loading work.hard_block(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# Loading instances from ModelSim/ExecUnit.sdo
+# Loading timing data from ModelSim/ExecUnit.sdo
+# ** Warning: Design size of 180633 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tbexecunit File: TBExecUnit.vhd
+# 
+# transcript off
+# 
+# restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading instances from ModelSim/ExecUnit.sdo
+# Loading timing data from ModelSim/ExecUnit.sdo
+# ** Warning: Design size of 91254 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tbexecunit File: TBExecUnit.vhd
+# run 12000 ns
+# ** Note: Opening test vector list from: ExecUnit00.tvs
+#    Time: 5 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 1  --  Propagation Delay = 17200 ps
+#    Time: 73200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 2  --  Propagation Delay = 16400 ps
+#    Time: 142400 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 3  --  Propagation Delay = 16000 ps
+#    Time: 210 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 4  --  Propagation Delay = 15800 ps
+#    Time: 277800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 5  --  Propagation Delay = 25000 ps
+#    Time: 355 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 6  --  Propagation Delay = 22500 ps
+#    Time: 430500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 7  --  Propagation Delay = 26400 ps
+#    Time: 508400 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 8  --  Propagation Delay = 22500 ps
+#    Time: 582500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 9  --  Propagation Delay = 15600 ps
+#    Time: 649600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 10  --  Propagation Delay = 16300 ps
+#    Time: 718300 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 11  --  Propagation Delay = 21900 ps
+#    Time: 791900 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 12  --  Propagation Delay = 23800 ps
+#    Time: 867800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 13  --  Propagation Delay = 25200 ps
+#    Time: 945200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 14  --  Propagation Delay = 23000 ps
+#    Time: 1021 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 15  --  Propagation Delay = 21600 ps
+#    Time: 1095600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 16  --  Propagation Delay = 21700 ps
+#    Time: 1169700 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 17  --  Propagation Delay = 22500 ps
+#    Time: 1244500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 18  --  Propagation Delay = 22500 ps
+#    Time: 1318500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 19  --  Propagation Delay = 22500 ps
+#    Time: 1392500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 20  --  Propagation Delay = 22500 ps
+#    Time: 1466500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 21  --  Propagation Delay = 20000 ps
+#    Time: 1538 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 22  --  Propagation Delay = 27500 ps
+#    Time: 1617500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 23  --  Propagation Delay = 21800 ps
+#    Time: 1691800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 24  --  Propagation Delay = 32000 ps
+#    Time: 1776 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 25  --  Propagation Delay = 22500 ps
+#    Time: 1850500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 26  --  Propagation Delay = 23200 ps
+#    Time: 1925200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 27  --  Propagation Delay = 22900 ps
+#    Time: 2000900 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 28  --  Propagation Delay = 24300 ps
+#    Time: 2076300 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 29  --  Propagation Delay = 22500 ps
+#    Time: 2150500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 30  --  Propagation Delay = 23100 ps
+#    Time: 2225100 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 31  --  Propagation Delay = 22500 ps
+#    Time: 2300500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 32  --  Propagation Delay = 22500 ps
+#    Time: 2374500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 33  --  Propagation Delay = 22500 ps
+#    Time: 2448500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 34  --  Propagation Delay = 22500 ps
+#    Time: 2522500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 35  --  Propagation Delay = 22500 ps
+#    Time: 2596500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 36  --  Propagation Delay = 22500 ps
+#    Time: 2670500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 37  --  Propagation Delay = 20000 ps
+#    Time: 2742 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 38  --  Propagation Delay = 27000 ps
+#    Time: 2821 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 39  --  Propagation Delay = 21800 ps
+#    Time: 2895800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 40  --  Propagation Delay = 31500 ps
+#    Time: 2979500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 41  --  Propagation Delay = 22500 ps
+#    Time: 3054500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 42  --  Propagation Delay = 23200 ps
+#    Time: 3129200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 43  --  Propagation Delay = 23200 ps
+#    Time: 3205200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 44  --  Propagation Delay = 24300 ps
+#    Time: 3282300 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 45  --  Propagation Delay = 22600 ps
+#    Time: 3356600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 46  --  Propagation Delay = 23100 ps
+#    Time: 3431100 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 47  --  Propagation Delay = 22500 ps
+#    Time: 3506500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 48  --  Propagation Delay = 22500 ps
+#    Time: 3580500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 49  --  Propagation Delay = 16200 ps
+#    Time: 3648200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 50  --  Propagation Delay = 17800 ps
+#    Time: 3717800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 51  --  Propagation Delay = 17800 ps
+#    Time: 3787800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 52  --  Propagation Delay = 17800 ps
+#    Time: 3857800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 53  --  Propagation Delay = 19900 ps
+#    Time: 3929900 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 54  --  Propagation Delay = 27600 ps
+#    Time: 4009600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 55  --  Propagation Delay = 21800 ps
+#    Time: 4083800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 56  --  Propagation Delay = 27600 ps
+#    Time: 4163600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 57  --  Propagation Delay = 17800 ps
+#    Time: 4233800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 58  --  Propagation Delay = 17800 ps
+#    Time: 4303800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 59  --  Propagation Delay = 22300 ps
+#    Time: 4378300 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 60  --  Propagation Delay = 22900 ps
+#    Time: 4452900 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 61  --  Propagation Delay = 23000 ps
+#    Time: 4527 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 62  --  Propagation Delay = 24000 ps
+#    Time: 4604 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 63  --  Propagation Delay = 22700 ps
+#    Time: 4678700 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 64  --  Propagation Delay = 22800 ps
+#    Time: 4752800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 65  --  Propagation Delay = 17800 ps
+#    Time: 4821800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 66  --  Propagation Delay = 16400 ps
+#    Time: 4890400 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 67  --  Propagation Delay = 16000 ps
+#    Time: 4958 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 68  --  Propagation Delay = 15800 ps
+#    Time: 5025800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 69  --  Propagation Delay = 20000 ps
+#    Time: 5098 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 70  --  Propagation Delay = 37700 ps
+#    Time: 5187700 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 71  --  Propagation Delay = 21800 ps
+#    Time: 5261800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 72  --  Propagation Delay = 32000 ps
+#    Time: 5346 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 73  --  Propagation Delay = 15600 ps
+#    Time: 5413600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 74  --  Propagation Delay = 16300 ps
+#    Time: 5482300 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 75  --  Propagation Delay = 23800 ps
+#    Time: 5557800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 76  --  Propagation Delay = 22200 ps
+#    Time: 5632200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 77  --  Propagation Delay = 23100 ps
+#    Time: 5707100 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 78  --  Propagation Delay = 23100 ps
+#    Time: 5783100 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 79  --  Propagation Delay = 21600 ps
+#    Time: 5857600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 80  --  Propagation Delay = 21400 ps
+#    Time: 5931400 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 81  --  Propagation Delay = 16100 ps
+#    Time: 6000100 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 82  --  Propagation Delay = 18800 ps
+#    Time: 6070800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 83  --  Propagation Delay = 18800 ps
+#    Time: 6140800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 84  --  Propagation Delay = 18800 ps
+#    Time: 6210800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 85  --  Propagation Delay = 19900 ps
+#    Time: 6281900 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 86  --  Propagation Delay = 35200 ps
+#    Time: 6369200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 87  --  Propagation Delay = 21700 ps
+#    Time: 6443700 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 88  --  Propagation Delay = 32200 ps
+#    Time: 6528200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 89  --  Propagation Delay = 18800 ps
+#    Time: 6598800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 90  --  Propagation Delay = 18800 ps
+#    Time: 6668800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 91  --  Propagation Delay = 22300 ps
+#    Time: 6742300 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 92  --  Propagation Delay = 22900 ps
+#    Time: 6816900 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 93  --  Propagation Delay = 23000 ps
+#    Time: 6891 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 94  --  Propagation Delay = 22800 ps
+#    Time: 6966800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 95  --  Propagation Delay = 22700 ps
+#    Time: 7040700 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 96  --  Propagation Delay = 22800 ps
+#    Time: 7114800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 97  --  Propagation Delay = 19200 ps
+#    Time: 7185200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 98  --  Propagation Delay = 16400 ps
+#    Time: 7254400 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 99  --  Propagation Delay = 16000 ps
+#    Time: 7322 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 100  --  Propagation Delay = 16500 ps
+#    Time: 7390500 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 101  --  Propagation Delay = 20000 ps
+#    Time: 7462 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 102  --  Propagation Delay = 34900 ps
+#    Time: 7548900 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 103  --  Propagation Delay = 21800 ps
+#    Time: 7621800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 104  --  Propagation Delay = 32000 ps
+#    Time: 7706 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 105  --  Propagation Delay = 15600 ps
+#    Time: 7773600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 106  --  Propagation Delay = 16300 ps
+#    Time: 7842300 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 107  --  Propagation Delay = 23800 ps
+#    Time: 7917800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 108  --  Propagation Delay = 22200 ps
+#    Time: 7992200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 109  --  Propagation Delay = 23100 ps
+#    Time: 8067100 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 110  --  Propagation Delay = 23100 ps
+#    Time: 8143100 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 111  --  Propagation Delay = 21600 ps
+#    Time: 8217600 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 112  --  Propagation Delay = 21400 ps
+#    Time: 8291400 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 113  --  Propagation Delay = 39200 ps
+#    Time: 8383200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 114  --  Propagation Delay = 39200 ps
+#    Time: 8475200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 115  --  Propagation Delay = 39200 ps
+#    Time: 8567200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 116  --  Propagation Delay = 39200 ps
+#    Time: 8659200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 117  --  Propagation Delay = 20000 ps
+#    Time: 8732 ns  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 118  --  Propagation Delay = 39200 ps
+#    Time: 8823200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 119  --  Propagation Delay = 21800 ps
+#    Time: 8897800 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 120  --  Propagation Delay = 39200 ps
+#    Time: 8989200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 121  --  Propagation Delay = 39200 ps
+#    Time: 9081200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 122  --  Propagation Delay = 39200 ps
+#    Time: 9173200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 123  --  Propagation Delay = 39200 ps
+#    Time: 9265200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 124  --  Propagation Delay = 39200 ps
+#    Time: 9357200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 125  --  Propagation Delay = 39200 ps
+#    Time: 9449200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 126  --  Propagation Delay = 39200 ps
+#    Time: 9541200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 127  --  Propagation Delay = 39200 ps
+#    Time: 9633200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note:    Measurement Index: 128  --  Propagation Delay = 39200 ps
+#    Time: 9725200 ps  Iteration: 0  Instance: /tbexecunit
+# ** Note: TestVector Finished, Closing File and Ending Simulation
+#    Time: 9727 ns  Iteration: 0  Instance: /tbexecunit
+# transcript off
